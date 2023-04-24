@@ -6,7 +6,7 @@ import { ImageGalleryItem } from 'components/ImageGalleryItem/ImageGalleryItem';
 import { Button } from 'components/Button/Button';
 import { Modal } from 'components/Modal/Modal';
 import { Loader } from 'components/Loader/Loader';
-import { getSearchGalleryApi } from 'components/api';
+import { getSearchGalleryApi } from 'Api/api';
 
 export class ImageGallery extends Component {
   state = {

@@ -1,5 +1,7 @@
 import { Component } from 'react';
 import { ButtonLoadMore } from './ButtonStyled'; 
+import PropTypes from 'prop-types';
+
 
 export class Button extends Component {
   state = {};
@@ -11,3 +13,8 @@ export class Button extends Component {
     );
   }
 }
+
+Button.propTypes = {
+  handleIncrement: PropTypes.func.isRequired,
+}
+

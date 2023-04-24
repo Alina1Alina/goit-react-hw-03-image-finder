@@ -7,6 +7,7 @@ import { Button } from 'components/Button/Button';
 import { Modal } from 'components/Modal/Modal';
 import { Loader } from 'components/Loader/Loader';
 import { getSearchGalleryApi } from 'Api/api';
+import PropTypes from 'prop-types';
 
 export class ImageGallery extends Component {
   state = {
@@ -108,4 +109,9 @@ export class ImageGallery extends Component {
       </>
     );
   }
+}
+
+ImageGallery.propTypes = {
+request: PropTypes.string.isRequired,
+
 }
